@@ -1,0 +1,26 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.log
+
+# --- Virtual Environments ---
+# This blocks the current .venv and any other versions you created
+.venv/
+.venv311/
+venv/
+env/
+ENV/
+
+# --- Environment Variables (Security) ---
+# NEVER upload your API keys to GitHub
+.env
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS Specific ---
+Thumbs.db
