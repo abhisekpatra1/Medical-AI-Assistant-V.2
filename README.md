@@ -1,8 +1,8 @@
-# 🏥 Medical AI Assistant V.2
+# Medical AI Assistant V.2
 
 A comprehensive AI-powered medical document assistant that leverages advanced language models and vector databases to process, analyze, and extract insights from medical documents.
 
-## ✨ Features
+## Features
 
 - **Document Upload & Processing**: Support for PDF, DOCX, XLSX, PNG, JPG formats
 - **Intelligent Q&A**: Chat interface with document context awareness and source citations
@@ -11,13 +11,13 @@ A comprehensive AI-powered medical document assistant that leverages advanced la
 - **Vector Database**: ChromaDB integration for efficient document retrieval
 - **Multi-Agent Architecture**: Specialized agents for different tasks (document loading, QA, extraction, report generation)
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - pip (Python package manager)
 - Google API Key (for Gemini models)
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -65,7 +65,7 @@ REPORT_DIR=reports
 LOG_LEVEL=INFO
 ```
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Starting the Backend Server
 
@@ -87,7 +87,7 @@ streamlit run app.py
 
 The frontend will be available at `http://localhost:8501`
 
-## 📱 Usage
+## Usage
 
 ### 1. Upload Medical Documents
 - Click "Upload medical documents" in the sidebar
@@ -111,7 +111,7 @@ The frontend will be available at `http://localhost:8501`
 - Click "Generate Report" to create a PDF
 - Download the generated report
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 Medical-AI-Assistant-V.2/
@@ -137,7 +137,7 @@ Medical-AI-Assistant-V.2/
 └── README.md
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Health Check
 - **GET** `/` - Service health check
@@ -163,7 +163,7 @@ Medical-AI-Assistant-V.2/
 - **GET** `/sessions/{session_id}/history` - Retrieve chat history
 - **DELETE** `/sessions/{session_id}` - Delete session and data
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Core Framework
 - **FastAPI** - Web framework for backend API
@@ -192,14 +192,14 @@ Medical-AI-Assistant-V.2/
 - **loguru** - Advanced logging
 - **OpenTelemetry** - Observability
 
-## 🔐 Security Notes
+## Security Notes
 
 - Store your `GOOGLE_API_KEY` securely in environment variables
 - Never commit `.env` file with actual credentials
 - API endpoints currently allow all origins (CORS) - configure appropriately for production
 - File paths are validated to prevent directory traversal attacks
 
-## 📝 Configuration Details
+## Configuration Details
 
 ### Storage Directories
 The application creates the following directories automatically:
@@ -211,7 +211,7 @@ The application creates the following directories automatically:
 ### Logging
 Logging level can be configured via the `LOG_LEVEL` environment variable (INFO, DEBUG, WARNING, ERROR)
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Connection Error
 - Ensure backend server is running: `python -m backend.main`
@@ -228,7 +228,7 @@ Logging level can be configured via the `LOG_LEVEL` environment variable (INFO, 
 - Ensure API key has proper permissions
 - Check rate limits on API usage
 
-## 📚 Dependencies
+## Dependencies
 
 Key packages included:
 - FastAPI 0.109.0
@@ -240,7 +240,7 @@ Key packages included:
 
 See `requirements.txt` for complete dependency list.
 
-## 📄 To Run this:
+## To Run this:
 
 ### Option 1: Update and Run
 Update the GOOGLE_API_KEY=API-KEY
@@ -279,15 +279,15 @@ And in another terminal:
 streamlit run app.py
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is provided as-is for educational and research purposes.
 
-## 📧 Support
+## Support
 
 For issues, questions, or suggestions, please open an issue on the GitHub repository.
 
@@ -295,4 +295,4 @@ For issues, questions, or suggestions, please open an issue on the GitHub reposi
 
 **Version:** 2.0  
 **Last Updated:** 2026  
-🏥 Making healthcare document management smarter with AI
+Making healthcare document management smarter with AI
